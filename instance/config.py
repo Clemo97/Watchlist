@@ -1,27 +1,2 @@
-class Config:
-    '''
-    General configuration parent class
-    '''
-    pass
-
-
-
-class ProdConfig(Config):
-    '''
-    Production  configuration child class
-
-    Args:
-        Config: The parent configuration class with General configuration settings
-    '''
-    pass
-
-
-class DevConfig(Config):
-    '''
-    Development  configuration child class
-
-    Args:
-        Config: The parent configuration class with General configuration settings
-    '''
-
-    DEBUG = True
+MOVIE_API_KEY = 'ed92e5d746432b1d7d95d032aa54aa59'
+MOVIE_API_BASE_URL = 'https://api.themoviedb.org/3/movie/{}?api_key={}'
